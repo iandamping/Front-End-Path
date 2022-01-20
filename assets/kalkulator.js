@@ -3,7 +3,8 @@ const calculator = {
     operator: null,
     firstNumber: null,
     waitingForSecondNumber: false
-};
+}
+
  
 function updateDisplay() {
     document.querySelector("#displayNumber").innerText = calculator.displayNumber;
@@ -55,7 +56,15 @@ function performCalculation() {
         result = parseInt(calculator.firstNumber) - parseInt(calculator.displayNumber)
     }
  
+    const history = {
+        firstNumber: calculator.firstNumber,
+        secondNumber: calculator.displayNumber,
+        operator: calculator.operator,
+        result: result
+    }
+    putHistory(history);
     calculator.displayNumber = result;
+    renderHistory();
 }
  
  
