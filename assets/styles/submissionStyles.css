@@ -192,7 +192,14 @@ table, td, th { border: 1px solid black; width: 300px; }
     object-position: ce;
 }
 
+footer{
+    padding: 20px;
+    color: white;
+    background-color: #9c27b0;
+}
+
 @media screen and (max-width: 1000px) {
+    #slideshow-container,
     #content,
     aside {
         width: 100%;
