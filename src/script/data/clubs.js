@@ -1,5 +1,3 @@
-export default clubs
-
 const clubs = [
     {
         name: "Arsenal",
@@ -45,3 +43,5 @@ const clubs = [
 
     }
 ];
+
+export default clubs

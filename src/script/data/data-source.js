@@ -1,5 +1,4 @@
-export default DataSource
-import clubs from "./clubs";
+import clubs from "./clubs.js";
 
 class DataSource {
     // constructor(onSuccess, onFailed){
@@ -21,4 +20,6 @@ class DataSource {
          
     }
 }
+
+export default DataSource
   
